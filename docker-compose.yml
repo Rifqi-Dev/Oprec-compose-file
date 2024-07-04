@@ -2,8 +2,8 @@ version: "3.9"
 
 services:
   backend:
-    container_name: "test-api-oprec"
-    image: "oprec-api-test"
+    container_name: "api-oprec"
+    image: "oprec-api"
     entrypoint: []
     command: "/bin/sh -c 'bun install && bunx prisma generate && bun run --watch src/index.ts'"
     volumes: ["./:/home/bun/app"]
