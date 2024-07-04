@@ -5,7 +5,7 @@ services:
     container_name: "test-api-oprec"
     image: "oprec-api-test"
     entrypoint: []
-    command: "/bin/sh -c 'bun install && bunx prima generate && bun run --watch src/index.ts'"
+    command: "/bin/sh -c 'bun install && bunx prisma generate && bun run --watch src/index.ts'"
     volumes: ["./:/home/bun/app"]
     restart: unless-stopped
     networks:
