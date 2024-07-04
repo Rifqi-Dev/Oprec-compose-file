@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   backend:
-    image: "oprec-api-test"
+    image: "oprec-api"
     volumes: ["./:/home/bun/app"]
     restart: unless-stopped
     networks:
