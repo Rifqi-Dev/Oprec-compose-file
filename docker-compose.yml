@@ -11,6 +11,15 @@ services:
     networks:
       - cf-tunnel
 
+  frontend:
+    container_name: "test-oprec"
+    image: "oprec-test"
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    networks:
+      - cf-tunnel
+
 networks:
   cf-tunnel:
     external: true
