@@ -16,7 +16,7 @@ services:
     image: "oprec-test"
     restart: unless-stopped
     ports:
-      - "8181:8181"
+      - "80:8181"
     networks:
       - cf-tunnel
 
